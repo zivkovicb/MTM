@@ -1,0 +1,141 @@
+.quick-task-list-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  /* border: 2px solid white;
+  border-radius: 8px; */
+}
+
+.quick-task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  color: white;
+  background: linear-gradient(90deg, rgb(108, 170, 1) 0%, rgb(0, 81, 7) 100%);
+  /* background-color: rgb(58, 135, 0); */
+  height: 24px;
+  max-width: 280px;
+  min-width: 150;
+  /* border: 3px solid black; */
+  border: 3px solid white;
+  border-radius: 4px;
+
+  padding: 2px 4px 2px 6px;
+  margin-bottom: 4px;
+
+  transition: 0.2s;
+}
+
+.quick-task:hover {
+  /* background-color: black; */
+  background: linear-gradient(270deg, rgb(91, 91, 91) 0%, rgb(38, 38, 38) 100%);
+  /* background-color: rgb(38, 38, 38); */
+  /* border-color: black; */
+  border-color: white;
+  border-radius: 22px;
+
+  cursor: pointer;
+}
+
+.quick-task-complete {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: rgb(110, 110, 110);
+  height: 24px;
+  max-width: 280px;
+  min-width: 150;
+  border: 3px solid black;
+  border-radius: 4px;
+
+  background-color: rgb(0, 55, 0);
+
+  padding: 2px 4px 2px 6px;
+  margin-bottom: 4px;
+
+  transition: 0.2s;
+}
+
+.quick-task-complete:hover {
+  background-color: rgb(0, 99, 43);
+  border-color: black;
+  border-radius: 22px;
+
+  cursor: pointer;
+}
+
+.task-text {
+  color: white;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+
+  font-size: 12px;
+  width: 220px;
+  height: 18px;
+  line-height: 18px;
+  border-right: 1px solid black;
+
+  transition: 0.5s;
+}
+
+.task-text:hover {
+  
+  padding: 0 40px 0 0;
+  border-right: 1px solid white;
+  white-space: nowrap;
+}
+
+.task-text-complete {
+  color: white;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  width: 220px;
+  height: 12px;
+  line-height: 14px;
+  border-right: 1px solid black;
+  text-decoration: line-through;
+
+  transition: 0.5s;
+  color: rgb(98, 98, 98);
+}
+
+.task-text-complete:hover {
+  color: white;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 0 10px;
+  margin: 0px;
+}
+
+.note-icon,
+.edit-icon,
+.delete-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2px;
+  margin-left: 2px;
+  transition: 0.2s;
+}
+
+.note-icon:hover,
+.edit-icon:hover,
+.delete-icon:hover {
+  color: black;
+  background-color: white;
+  border-radius: 16px;
+  padding: 2px;
+}
+

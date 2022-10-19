@@ -1,0 +1,11 @@
+.quick-task-list-title {
+  display: flex;
+  font-size: 26px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  padding: 2px;
+  margin: 0px 6px 4px 2px;
+}

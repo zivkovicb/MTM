@@ -1,38 +1,165 @@
-.App {
+body {
+  /* background: rgb(109,170,1); */
+  /* background: linear-gradient(90deg, rgba(109,170,1,1) 0%, rgb(0, 81, 7) 100%); green */
+  /* background: rgb(63, 63, 63); */
+  background: linear-gradient(90deg, rgb(91, 91, 91) 0%, rgb(38, 38, 38) 100%);
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  height: 700px; /* obrisi i podesi visinu */
+}
+
+button {
+  background: linear-gradient(90deg, rgba(109,170,1,1) 0%, rgb(0, 81, 7) 100%);
+  /* background-color: rgb(120,170,5); */
+  /* border: 2px solid black; */
+  border: 2px solid white;
+  border-radius: 2px;
   text-align: center;
+  text-justify: center;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 8px;
+  color: white;
+  transition: 0.2s;
+  height: 26px;
+  width: 82px;
+  margin-bottom: 4px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button:hover {
+  border-radius: 24px;
+  background: linear-gradient(270deg, rgb(91, 91, 91) 0%, rgb(38, 38, 38) 100%);
+  /* background-color: black; */
+
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input {
+  border: 2px solid black;
+  margin-right: 1px;
+  border-radius: 2px;
+  padding-left: 4px;
+  margin-bottom: 4px;
+  margin-right: 4px;
+  height: 22px;
+  width: 200px; /* Ovo mozda obrisati? ? ?  */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input:hover {
+  background-color: rgb(242, 242, 242);
+}
+
+.body-container {
+  display: flex;
+}
+
+.quick-task-container {
+  display: flex;
+  align-items: center;
+  height: fit-content; /* set height */
+
+  /* background: linear-gradient(90deg, rgb(108, 170, 1) 0%, rgb(0, 81, 7) 100%); green*/
+  background: linear-gradient(90deg, rgb(91, 91, 91) 0%, rgb(38, 38, 38) 100%);
+  padding: 2px 6px 8px 6px;
+  border: 3px solid black;
+  border-radius: 18px;
+  border-bottom-width: 8px;
+  border-right-width: 6px;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 0px 8px;
+}
+
+.quick-task-input {
+  color: white;
+  background-color: rgb(50, 50, 50);
+  outline: none;
+}
+
+.quick-task-input:hover {
+  background-color: rgb(38, 38, 38);
+}
+
+.input-container {
+  display: flex;
+}
+
+.input-status-container,
+.input-buttons-container {
   display: flex;
   flex-direction: column;
+}
+
+.status-container {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  color: white;
+  width: 200px;
+  height: 22px;
+  /* border: 1px solid white; */
+}
+
+.status-title {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 12px;
+
+  /* border: 1px solid white; */
 }
 
-.App-link {
-  color: #61dafb;
+.status-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.status-button-b,
+.status-button-y,
+.status-button-r {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12px;
+  width: 12px;
+  border: 3px solid black;
+  border-radius: 18px;
+
+  margin-right: 6px;
+  margin-left: 2px;
+  transition: 0.2s;
 }
+
+.status-button-r {
+  background-color: rgb(171, 0, 0);
+}
+.status-button-y {
+  background-color: rgb(200, 157, 0);
+}
+.status-button-b {
+  background-color: rgb(0, 113, 154);
+}
+
+.status-button-r:hover {
+  background-color: white;
+  border-color: rgb(171, 0, 0);
+}
+.status-button-y:hover {
+  background-color: white;
+  border-color: rgb(200, 157, 0);
+}
+.status-button-b:hover {
+  background-color: white;
+  border-color: rgb(0, 113, 154);
+}
+
+/* .status-button-b-active,
+.status-button-y-active,
+.status-button-r-active {
+} */
+
