@@ -14,7 +14,7 @@ const  QuickTaskList = () => {
     }
     const newTasks = [task, ...tasks];
     setTasks(newTasks);
-    console.log(newTasks);
+    // console.log(newTasks);
   };
 
   const updateTask = (taskId, newValue) => {

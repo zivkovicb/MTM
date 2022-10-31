@@ -1,11 +1,3 @@
-.quick-task-list-container {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  /* border: 2px solid white;
-  border-radius: 8px; */
-}
-
 .quick-task {
   display: flex;
   align-items: center;

@@ -2,8 +2,9 @@
   display: flex;
   flex-direction: column;
   flex: 3.5;
-  background: linear-gradient(90deg, rgb(108, 170, 1) 0%, rgb(0, 81, 7) 100%);
-  /*background: linear-gradient(270deg, rgb(91, 91, 91) 0%, rgb(38, 38, 38) 100%); /*grey */
+  /* background: linear-gradient(90deg, rgb(108, 170, 1) 0%, rgb(0, 81, 7) 100%); */
+  background: linear-gradient(270deg, rgb(91, 91, 91) 0%, rgb(38, 38, 38) 100%); /* grey */
+  box-shadow: -6px -10px 30px 10px black inset;
   padding: 2px 6px 8px 6px;
 
   height: 600px;
@@ -12,10 +13,12 @@
 
   margin-right: 8px;
   color: white;
-  border: 3px solid black;
+  border: 3px solid rgb(4, 4, 4); /* nije skroz black vec je malo svjetlija */
   border-bottom-width: 8px;
   border-right-width: 6px;
   border-radius: 18px;
+
+  position: relative;
 }
 
 .tasker-header-container {
@@ -31,6 +34,7 @@
 .tasker-title {
   font-size: 26px;
   color: white;
+  font-weight: bold;
   margin-left: 8px;
   padding-top: 4px;
 }
@@ -70,11 +74,10 @@
   min-width: 240px;
   height: 200px;
 
-  border: 3px solid black;
+  border: 3px solid rgb(4, 4, 4);
   border-radius: 18px;
   border-bottom-width: 8px;
   border-right-width: 6px;
-
   background: linear-gradient(270deg, rgb(108, 170, 1) 0%, rgb(0, 81, 7) 100%);
   /* background: linear-gradient(90deg, rgb(91, 91, 91) 0%, rgb(38, 38, 38) 100%); */
   transition: 0.2s;
@@ -112,5 +115,7 @@
 .main-task-body {
   display: flex;
   flex-direction: column;
-
+  border: 1px solid white;
+  width: 92%;
+  height: 80%;
 }

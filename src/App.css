@@ -1,11 +1,9 @@
 body {
-  /* background: rgb(109,170,1); */
-  /* background: linear-gradient(90deg, rgba(109,170,1,1) 0%, rgb(0, 81, 7) 100%); green */
-  /* background: rgb(63, 63, 63); */
-  background: linear-gradient(90deg, rgb(91, 91, 91) 0%, rgb(38, 38, 38) 100%);
+  /* background: linear-gradient(90deg, rgb(91, 91, 91) 0%, rgb(38, 38, 38) 100%); grey */
+  background: linear-gradient(90deg, rgb(103, 0, 100) 0%, rgb(48, 0, 20) 100%);
+  /* background-color: rgb(103, 103, 103); */
 
   font-family: Arial, Helvetica, sans-serif;
-
   height: 700px; /* obrisi i podesi visinu */
 }
 
@@ -23,7 +21,7 @@ button {
   color: white;
   transition: 0.2s;
   height: 26px;
-  width: 82px;
+  min-width: 82px;
   margin-bottom: 4px;
 }
 
@@ -62,7 +60,7 @@ input:hover {
   /* background: linear-gradient(90deg, rgb(108, 170, 1) 0%, rgb(0, 81, 7) 100%); green*/
   background: linear-gradient(90deg, rgb(91, 91, 91) 0%, rgb(38, 38, 38) 100%);
   padding: 2px 6px 8px 6px;
-  border: 3px solid black;
+  border: 3px solid rgb(4, 4, 4);
   border-radius: 18px;
   border-bottom-width: 8px;
   border-right-width: 6px;
