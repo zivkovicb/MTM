@@ -30,7 +30,7 @@ const Header = ( ) => {
       <GrUser className='user-icon' onClick={handleUserMenu} />
       <div className={!isOpen ? 'user-menu-open' : 'user-menu-closed'}> {/*provjeriti uslov!!! da li treba !isOpne ili isOpen */}
         <div className='login-container'>
-          <span className='login-text'>LogIn</span>
+          <span className='login-text'>Log in</span>
           <MdLogin 
             className='login-icon'
             onClick = {handleLogIn} // ovooo ne radiii atm
