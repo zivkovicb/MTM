@@ -22,7 +22,7 @@
 
 .username-pssw-input-container {
   margin-top: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 2px;
 }
 
 .password-input,
@@ -35,7 +35,9 @@
 .sign-up-button,
 .sign-in-button,
 .sign-in-with-google-button{
-  transition: 0s;
+  margin-right: 2px;
+  margin-left: 2px;
+  transition: 0.2s;
 }
 
 .sign-in-with-google-button {
@@ -55,6 +57,7 @@
   margin-top: 6px;
   font-size: 14px;
   color: rgb(137, 137, 137);
+  transition: 0.2s;
 }
 
 .no-account-span:hover {
